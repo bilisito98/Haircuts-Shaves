@@ -1,0 +1,149 @@
+footer {
+    position: relative;
+    background-color: var(--dark-bg-1);
+
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+    background-color: var(--dark-bg-1);
+    flex-wrap: wrap;
+}
+.contact .contact_form {
+    padding: 100px 0;
+    padding-left: calc(50% - 600px);
+    width: 50%;
+}
+
+.contact .contact_form .section-title {
+    color: var(--white);
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.contact .contact_form input {
+    background: transparent;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 230%;
+}
+
+.contact .contact_form textarea {
+    background: transparent;
+    margin-bottom: 30px;
+    width: 495px;
+}
+
+.contact .contact_form input::placeholder,
+.contact .contact_form textarea::placeholder {
+    color: var(--text-color-2);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.contact .contact_form button {
+    width: 160 px;
+    display: block;
+}
+
+.contact .contact_content {
+    position: relative;
+    padding: 100px 0;
+    background-size: cover;
+    background-image: url("../images/contact_img_1.jpg");
+    width: 50%;
+    padding-left: 150px;
+}
+
+.contact .contact_content .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.contact .contact_content .section-title {
+    color: var(--white);
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+
+    position: relative;
+    z-index: 5;
+}
+
+.contact .contact_content address,
+.contact ,.contact_content h4 {
+    font-style: normal;
+    color: var(--text-color-2);
+    margin-bottom: 15px;
+
+    position: relative;
+    z-index: 5;
+}
+
+.contact .contact_content .label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    color: var(--white);
+
+    position: relative;
+    z-index: 5;
+}
+
+.contact .contact_content .label .rectangle {
+    display: block;
+    height: 1px;
+    width: 50px;
+    background-color: var(--white);
+}
+
+footer .social-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--light-gray);
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    padding: 0 80px;
+    width: 100%;
+}
+
+footer .social-bar .label {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 50px;
+}
+
+footer .social-bar .label a {
+    color: var(--title-color);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+footer .social-bar .label a:hover{
+    color: var(--main-color);
+}
+
+footer .social-bar .label .rectangle {
+    display: block;
+    height: 1px;
+    width: 50px;
+    background-color: var(--title-color);
+}
