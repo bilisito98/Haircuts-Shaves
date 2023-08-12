@@ -1,0 +1,79 @@
+@import "../helppers/mixins";
+@import "../helppers/variables";
+
+.section-services {
+  position: relative;
+  background-color: $dark-bg-3;
+  padding: 100px 0;
+}
+
+.section-services > .article-text {
+  margin: 0 auto;
+  width: 1200px;
+}
+.section-services .article__title {
+  margin-bottom: 30px !important;
+}
+
+.service-tables {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin: 0 auto 50px auto;
+  position: relative;
+  width: 1200px;
+  z-index: 5;
+
+  .service-tables__table {
+    color: $text-color-2;
+    display: block;
+    padding: 40px;
+    width: 50%;
+    &:nth-child(1) {
+      /* fallback for old browsers */
+      background: #171a24;
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(
+        to bottom,
+        #171a24,
+        rgba(23, 26, 36, 0.2)
+      );
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to bottom, #171a24, rgba(23, 26, 36, 0.2));
+    }
+    &:nth-child(2) {
+      /* fallback for old browsers */
+      background: #090b13;
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to bottom, #090b13, rgba(9, 11, 19, 0.2));
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to bottom, #090b13, rgba(9, 11, 19, 0.2));
+    } 
+  }
+  .service-tables__table tbody tr td {
+    padding-top: 20px;
+  }
+  .service-tables__underline {
+    border-bottom: solid 1px $text-color-2-12per;
+    width: 30%;
+  }
+}
+
+.section-services > .main-button-dark {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+.background {
+  background-image: url("../images/img_services_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  opacity: 0.2;
+  top: 0;
+  width: 100%;
+}

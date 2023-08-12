@@ -1,0 +1,94 @@
+@import "../helppers/mixins";
+@import "../helppers/variables";
+
+.barbers {
+  padding: 100px 0;
+  background-color: var(--light-gray);
+}
+.barbers .label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--title-color);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 1200px;
+  margin: 0 auto 20px auto;
+}
+.barbers .label .rectangle {
+  display: block;
+  height: 1px;
+  width: 80px;
+  background-color: var(--text-color-2);
+}
+.barbers .section-title {
+  color: var(--title-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: capitalize;
+
+  width: 1200px;
+  margin: 0 auto 30px auto;
+}
+.barbers .barbers_cards h4 {
+  color: var(--title-color);
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+}
+.barbers .barbers_cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  width: 1200px;
+}
+.barbers .barbers_cards .card img {
+  margin-bottom: 30px;
+  width: 370px;
+}
+
+.barbers .barbers_cards .card h4 {
+  margin-bottom: 10px;
+}
+.barbers .barbers_cards .card p {
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.barbers .barbers_cards .card ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.barbers .barbers_cards .card ul li {
+  background-color: #fff;
+  border-radius: 25px;
+  width: 44px;
+  height: 44px;
+}
+.barbers .barbers_cards .card ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+}
+.barbers .barbers_cards .card ul li a i {
+  color: var(--title-color);
+  font-size: 20px;
+}
+.barbers .barbers_cards .card ul li:hover a i {
+  color: var(--main-color);
+
+}

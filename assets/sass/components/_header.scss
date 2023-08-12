@@ -1,0 +1,116 @@
+@import "../helppers/mixins";
+@import "../helppers/variables";
+
+.page-header {
+  @include d-flex();
+
+  margin: 0 auto;
+  height: 680px;
+}
+
+.social-sidebar {
+  @include d-flex(center, space-between, column);
+  height: 100%;
+  width: 155px;
+
+  .social-sidebar__logo {
+    margin-top: 50px;
+    width: 80px;
+  }
+
+  .social-sidebar__section {
+    @include d-flex(center, center, column);
+    height: 50%;
+    gap: 10px;
+  }
+  .social-sidebar__link {
+    color: $title-color;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    text-transform: capitalize;
+    transform: rotate(-90deg);
+  }
+  .social-sidebar__link:hover {
+    color: $main-color;
+  }
+  .rectangle {
+    display: block;
+    height: 60px;
+    width: 2px;
+
+    background-color: $title-color;
+  }
+}
+
+.hero-section {
+  position: relative;
+  background-color: $dark-bg-1;
+  height: 100%;
+  padding: 50px;
+  width: calc(100% - 155px);
+  & > .overlay {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.navbar {
+  @include d-flex(center, space-between, center);
+  position: relative;
+  height: 50px;
+  z-index: 10;
+
+  .navbar__menu {
+    @include d-flex(center, flex-start, center);
+    gap: 20px;
+  }
+  .navbar__item {
+    color: $white;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: color 0.2s ease;
+  }
+  .navbar__link {
+    color: $white;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: color 0.2s ease;
+  }
+  .navbar__link:hover {
+    color: $main-color;
+  }
+  .navbar__booking {
+    @include d-flex(center, flex-end, center);
+    font-size: 16px;
+    gap: 20px;
+  }
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  .slider__img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%);
+  }
+}

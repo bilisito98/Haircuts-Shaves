@@ -1,0 +1,25 @@
+.section-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+    margin: 100px auto;
+    width: 1200px;
+  
+    .section-about__photos {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 48%;
+    }
+  
+    & > .article-text {
+      margin: 0;
+      width: 48%;
+  
+      .main-button {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
