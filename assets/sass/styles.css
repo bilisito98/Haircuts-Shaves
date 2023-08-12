@@ -1,0 +1,157 @@
+
+@use "./components/header";
+@use "./components/about";
+@use "./components/services";
+@use "./components/jumbotron";
+@use "./components/barbers";
+
+@import "./helppers/variables";
+@import "./helppers/mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.main-button {
+  background: $light-gray;
+  cursor: pointer;
+  font-size: 16px;
+  border: solid 1px $light-gray;
+  border-radius: 25px;
+
+  height: 40px;
+  text-transform: uppercase;
+  transition: all ease 0.2s;
+  padding: 0 20px;
+}
+.main-button-dark {
+  border: solid 1px $main-color;
+  background-color: transparent;
+  color: $white;
+  &:hover {
+    background-color: $main-color;
+    color: $white;
+  }
+}
+.main-button-light {
+  border: solid 1px $main-color;
+  background-color: transparent;
+  color: $title-color;
+  &:hover {
+    background-color: $main-color;
+    color: $white;
+  }
+}
+.article-text {
+  position: relative;
+  margin-left: 80px;
+  margin-top: 150px;
+  width: 50%;
+  z-index: 10;
+
+  .article__label {
+    @include d-flex(center, flex-start);
+    gap: 5px;
+
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+    opacity: 0.6;
+    text-transform: uppercase;
+  }
+  .article__label > .rectangle {
+    width: 80px;
+    height: 1.5px;
+    display: block;
+  }
+
+  .article__label-hero {
+    color: $text-color-2-60;
+  }
+  .article__label-hero > .rectangle {
+    background-color: $text-color-2-60;
+  }
+
+  .article__label-light {
+    color: $title-color;
+    font-weight: 600;
+    gap: 10px;
+  }
+  .article__label-light > .rectangle {
+    background-color: $title-color;
+  }
+
+  .article__label-dark {
+    color: $text-color-2-60;
+    font-weight: 600;
+    gap: 10px;
+  }
+  .article__label-dark > .rectangle {
+    background-color: $text-color-2-60;
+  }
+
+  .article__title {
+    text-transform: capitalize;
+    font-family: "Raleway", sans-serif;
+
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 5;
+  }
+  .article__title-hero {
+    color: $white;
+    font-size: 75px;
+    font-weight: 700;
+  }
+  .article__title-light {
+    color: $title-color;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .article__title-dark {
+    color: $white;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .article__call {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .article__call-light {
+    color: $text-color-1;
+  }
+
+  .article__info {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .article__info-hero {
+    color: $text-color-2;
+  }
+  .article__info-light {
+    color: $text-color-1;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
